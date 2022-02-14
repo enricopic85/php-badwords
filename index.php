@@ -1,5 +1,6 @@
 <?php
     $paragrafo='sotto la panca la capra canta, sopra la panca la capra crepa';
+    $word=$_GET["word"];
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $paragrafo; echo strlen($paragrafo) ?>
+    <h1><?php echo $paragrafo; ?> <?php echo strlen($paragrafo) ?></h1>
+    <?php echo str_replace($word,"***",$paragrafo) ?>
 </body>
 </html>
