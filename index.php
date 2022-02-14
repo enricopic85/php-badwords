@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo $paragrafo; echo strlen($paragrafo) ?>
+   <h1> <?php echo $paragrafo;?>  <?php echo strlen($paragrafo) ?> </h1>
+    <?php echo str_replace("capra","***",$paragrafo) ?>
 </body>
 </html>
